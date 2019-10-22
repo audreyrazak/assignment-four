@@ -64,7 +64,7 @@ body {
     width:20px;
     height:100px;
     left: 150px;
-    bottom: -260px;
+    bottom: -305px;
     background-color: #ffffff;
     border: solid black 3px;
     border-radius: 5px;
@@ -173,15 +173,28 @@ body {
     z-index: 5;
 }
 #L{
+  position:absolute;
   z-index: 99;
+  width: 20px;
+  height: 100px;
 }
-#O1:hover{
+#O1{
+  position:absolute;
+  z-index: 99;
+  width: 70px;
+  height: 70px;
 }
 #O2{
+  position:absolute;
   z-index: 99;
+  width: 70px;
+  height: 70px;
 }
 #P{
+  position:absolute;
   z-index: 99;
+  width: 20px;
+  height: 100px;
 }
 @keyframes lstretch {
   0%{height:100px;
