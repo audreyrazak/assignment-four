@@ -1,35 +1,3 @@
-/**
-#W {
-    position: absolute;
-    z-index: 99;
-    width: 290px;
-    height: 200px;
-}
-
-#W:hover {
-    animation-name: w-walk;
-    animation-iteration-count: infinite;
-    animation-duration: 4s;
-}
-
-#A {
-    z-index: 99;
-    position: absolute;
-    left: 290px;
-    width: 200px;
-    height: 200px;
-}
-
-#A:hover {
-    position: absolute;
-    left: 400px;
-}
-
-@keyframes w-walk {
-  0% {top: 25%;}
-  100% {top: -35%;}
-}
-**/
 body {
     background-color: white;
 }
