@@ -1,0 +1,241 @@
+/**
+#W {
+    position: absolute;
+    z-index: 99;
+    width: 290px;
+    height: 200px;
+}
+
+#W:hover {
+    animation-name: w-walk;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+#A {
+    z-index: 99;
+    position: absolute;
+    left: 290px;
+    width: 200px;
+    height: 200px;
+}
+
+#A:hover {
+    position: absolute;
+    left: 400px;
+}
+
+@keyframes w-walk {
+  0% {top: 25%;}
+  100% {top: -35%;}
+}
+**/
+body {
+    background-color: white;
+}
+.frame{
+    position: absolute;
+    width:60vh;
+    height:85vh;
+    left: calc(50% - 30vh);
+    top: 7.5vh;
+    background-color: #ff5cc7;
+    border-radius: 5px;
+}
+.frame-neg{
+    position: absolute;
+    width:45vh;
+    height:60vh;
+    left: calc(50% - 22.5vh);
+    top: 15vh;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.letter-box {
+    position: absolute;
+    top: 25%;
+    left: calc(50% - 245px);
+    width: 500px;
+    height: 20vh;
+    box-sizing: border-box;
+}
+.l-pos{
+    position: absolute;
+    width:20px;
+    height:100px;
+    left: 150px;
+    bottom: -260px;
+    background-color: #ffffff;
+    border: solid black 3px;
+    border-radius: 5px;
+}
+.l-pos:active{
+  animation-name: lstretch;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+.o-pos{
+    position: absolute;
+    width:70px;
+    height:70px;
+    top:330px;
+    left:190px;
+    background-color: #ffffff;
+    border: solid black 3px;
+    border-radius: 100px;
+}
+.o-neg{
+    position: absolute;
+    width:30px;
+    height:30px;
+    top:350px;
+    left:210px;
+    background-color: #ffffff;
+    border: solid black 3px;
+    border-radius: 100px;
+}
+.o-pos2{
+    position: absolute;
+    width:70px;
+    height:70px;
+    top:330px;
+    left:275px;
+    background-color: #ffffff;
+    border: solid black 3px;
+    border-radius: 100px;
+}
+.o-neg2{
+    position: absolute;
+    width:30px;
+    height:30px;
+    top:350px;
+    left:295px;
+    background-color: #ffffff;
+    border: solid black 3px;
+    border-radius: 100px;
+}
+.l-pos3{
+    position: absolute;
+    width:20px;
+    height:100px;
+    left: 365px;
+    top: 330px;
+    background-color: #ffffff;
+    border: solid black 3px;
+    border-radius: 5px;
+}
+.o-pos3{
+    position: absolute;
+    width:70px;
+    height:70px;
+    top:330px;
+    left:370px;
+    background-color: #ffffff;
+    border: solid black 3px;
+    border-radius: 100px;
+    z-index: 1;
+}
+.o-neg3{
+    position: absolute;
+    width:30px;
+    height:30px;
+    top:350px;
+    left:390px;
+    background-color: #ffffff;
+    border: solid black 3px;
+    border-radius: 100px;
+    z-index: 6;
+}
+.l-pos3{
+    position: absolute;
+    width:20px;
+    height:100px;
+    left: 365px;
+    top: 330px;
+    background-color: #ffffff;
+    border: solid black 3px;
+    border-radius: 5px;
+    z-index: 4;
+}
+.l-pos3:active{
+  animation-name: lstretch;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+.l-neg3{
+    position: absolute;
+    width:20px;
+    height:60px;
+    left: 386px;
+    top: 338px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    z-index: 5;
+}
+#L{
+  z-index: 99;
+}
+#O1:hover{
+}
+#O2{
+  z-index: 99;
+}
+#P{
+  z-index: 99;
+}
+@keyframes lstretch {
+  0%{height:100px;
+  }
+  100%{height: 100vh;
+  }
+}
+@media only screen and (max-width:600px){
+body{
+    background-color: black;
+  }
+  .frame{
+      background-color: #c8ff2a;
+  }
+  .frame-neg{
+      background-color: black;
+  }
+  .l-pos{
+      background-color: black;
+      border: solid white 3px;
+  }
+  .o-pos{
+      background-color: black;
+      border: solid white 3px;
+  }
+  .o-neg{
+      background-color: black;
+      border: solid white 3px;
+  }
+  .o-pos2{
+      background-color: black;
+      border: solid white 3px;
+  }
+  .o-neg2{
+      background-color: black;
+      border: solid white 3px;
+  }
+  .l-pos3{
+      background-color: black;
+      border: solid white 3px;
+  }
+  .o-pos3{
+      background-color: black;
+      border: solid white 3px;
+  }
+  .o-neg3{
+      background-color: black;
+      border: solid white 3px;
+  }
+  .l-pos3{
+      background-color: black;
+      border: solid white 3px;
+  }
+  .l-neg3{
+      background-color: black;
+  }
+}
