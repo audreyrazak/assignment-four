@@ -14,25 +14,22 @@ o1.addEventListener("mouseover", ChangeO1Pos);
 var o2 = document.getElementById("O2");
 o2.addEventListener("mouseover", ChangeO2Pos);
 
-function ChangeO1Pos {
-  o1.style.left = "220px";
+function ChangeO1Pos() {
+  o1.style.left = "10px";
 }
+function ChangeO2Pos() {
+  o2.style.left = "-10px";
+}
+var frame = document.getElementById("frame");
+var rand = Math.random();
+console.log(rand);
 
-function ChangeO2Pos {
-  o2.style.left = "340px";
-}
 RandomFrameColor();
 function RandomFrameColor() {
-  var frame = document.getElementById("frame");
-  var random = Math.random();
-  console.log(random);
-  if (random < 0.25) {
+  if (rand < 0.5) {
     frame.style.backgroundColor = "#ff49d1";
-  } else if (random < 0.5) {
-    frame.style.backgroundColor = "#e112ec";
-  } else if (random < 0.8) {
-    frame.style.backgroundColor = "#ffb9f8";
-  } else if (random < 1.0) {
-    frame.style.backgroundColor = "#cd00b9";
+  }
+  else {
+    frame.style.backgroundColor = "#ff11bc";
   }
 }
